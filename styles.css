@@ -1,41 +1,41 @@
 :root {
-  --bg: #0b0c10;
-  --fg: #e8e8e8;
-  --muted: #b9b9b9;
-  --card: rgba(255, 255, 255, 0.06);
-  --border: rgba(255, 255, 255, 0.12);
-  --link: #9ad5ff;
+  --bg: #ffffff;
+  --fg: #111111;
+  --muted: #666666;
+  --border: #e6e6e6;
+  --link: #1a73e8;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-  background: radial-gradient(1200px 800px at 20% 10%, rgba(154,213,255,0.12), transparent 50%),
-              radial-gradient(900px 600px at 80% 30%, rgba(255,154,193,0.10), transparent 55%),
-              var(--bg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
   color: var(--fg);
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 .wrap {
-  max-width: 720px;
-  padding: 48px 20px;
+  max-width: 640px;
   margin: 0 auto;
+  padding: 80px 24px;
 }
 
 .header h1 {
-  margin: 0 0 10px 0;
+  font-weight: 500;
   font-size: 34px;
+  margin: 0 0 40px 0;
 }
 
 .card {
-  margin-top: 22px;
-  padding: 22px;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 14px;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 22px 0;
 }
 
 a {
@@ -43,9 +43,12 @@ a {
   text-decoration: none;
 }
 
-a:hover { text-decoration: underline; }
+a:hover {
+  text-decoration: underline;
+}
 
 .footer {
-  margin-top: 26px;
+  margin-top: 60px;
+  font-size: 14px;
   color: var(--muted);
 }
